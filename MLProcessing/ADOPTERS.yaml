@@ -1,0 +1,11 @@
+
+description: This is a compilation list of the current adopters of the data model MLProcessing of the Subject dataModel.MachineLearning.  All fields are non mandatory. More info at https://smart-data-models.github.io/data-models/templates/dataModel/CURRENT_ADOPTERS.yaml
+currentAdopters:
+-
+ adopter: FIWARE4Water challenges
+ description: Machine Learning models for the development of a contest about ML
+ mail: 
+ organization: 
+ project: FIWARE4Water.eu
+ comments: 
+ startDate: 
