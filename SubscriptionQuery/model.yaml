@@ -1,5 +1,5 @@
 SubscriptionQuery:
-  description: ""
+  description: 'Subscription Query model for Machine Learning models'
   properties:
     alternateName:
       description: 'An alternative name for this item'
