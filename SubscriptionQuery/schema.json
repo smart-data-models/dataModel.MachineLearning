@@ -3,7 +3,7 @@
   "$schemaVersion": "0.0",
   "$id": "https://smart-data-models.github.io/dataModel.MLModel/SubscriptionQuery/schema.json",
   "title": " Smart Data Models - Machine Learning Subscription Query",
-  "description": "",
+  "description": "Subscription Query model for Machine Learning models  ",
   "type": "object",
   "allOf": [
     {
