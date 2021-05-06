@@ -3,7 +3,7 @@
   "$schemaVersion": "0.0",
   "$id": "https://smart-data-models.github.io/dataModel.MLModel/MLModel/schema.json",
   "title": " Smart Data Models - Machine Learning Processing",
-  "description": "Data model for compilation of the elements of a machine learning model.",
+  "description": "Data model for compilation of the elements about the execution of a machine learning model.",
   "type": "object",
   "allOf": [
     {
