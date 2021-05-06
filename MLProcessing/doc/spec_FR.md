@@ -1,7 +1,7 @@
 Entité : MLProcessing  
 =====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md)  
-Description globale : **Modèle de données pour la compilation des éléments d'un modèle d'apprentissage automatique.**  
+Description globale : **Modèle de données permettant de compiler les éléments relatifs à l'exécution d'un modèle d'apprentissage automatique**.  
 
 ## Liste des propriétés  
 
@@ -12,7 +12,7 @@ Entité : MLProcessing
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 MLProcessing:    
-  description: 'Data model for compilation of the elements of a machine learning model.'    
+  description: 'Data model for compilation of the elements about the execution of a machine learning model.'    
   properties:    
     alternateName:    
       description: 'An alternative name for this item'    
@@ -123,7 +123,7 @@ MLProcessing:
 }  
 ```  
 #### MLProcessing NGSI-v2 normalisé Exemple  
-Voici un exemple de traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLProcessing:01",  
@@ -152,7 +152,7 @@ MLProcessing:
 }  
 ```  
 #### MLProcessing NGSI-LD normalisé Exemple  
-Voici un exemple de traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLProcessing:01",  
