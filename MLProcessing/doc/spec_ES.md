@@ -1,7 +1,7 @@
 Entidad: MLProcessing  
 =====================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md)  
-Descripción global: **Modelo de datos para la compilación de los elementos de un modelo de aprendizaje automático.**  
+Descripción global: **Modelo de datos para la compilación de los elementos sobre la ejecución de un modelo de aprendizaje automático.**  
 
 ## Lista de propiedades  
 
@@ -12,7 +12,7 @@ Entidad: MLProcessing
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 MLProcessing:    
-  description: 'Data model for compilation of the elements of a machine learning model.'    
+  description: 'Data model for compilation of the elements about the execution of a machine learning model.'    
   properties:    
     alternateName:    
       description: 'An alternative name for this item'    
