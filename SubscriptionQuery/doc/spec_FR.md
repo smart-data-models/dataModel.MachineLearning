@@ -1,6 +1,7 @@
 Entité : SubscriptionQuery  
 ==========================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md)  
+Description globale : **Modèle de requête d'abonnement pour les modèles d'apprentissage automatique**.  
 
 ## Liste des propriétés  
 
@@ -11,7 +12,7 @@ Entité : SubscriptionQuery
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SubscriptionQuery:    
-  description: ""    
+  description: 'Subscription Query model for Machine Learning models'    
   properties:    
     alternateName:    
       description: 'An alternative name for this item'    
