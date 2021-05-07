@@ -161,7 +161,7 @@ SubscriptionQuery:
 }  
 ```  
 #### AbonnementQuery NGSI-v2 normalisé Exemple  
-Voici un exemple d'une SubscriptionQuery au format JSON-LD tel que normalisé. Cette requête est compatible avec la norme NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'une SubscriptionQuery au format JSON-LD tel que normalisé. Cette requête est compatible avec NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "Subscription.01",  
