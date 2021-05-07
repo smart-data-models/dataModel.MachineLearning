@@ -2,7 +2,7 @@
 
 ## Description 
 
-Data model for compilation of the elements of a machine learning model.
+Data model for compilation of the elements about the execution of a machine learning model.
 ### Specification
 
 Link to the [specification](https://smart-data-models.github.io/dataModel.MachineLearning/MLProcessing/doc/spec.md)
