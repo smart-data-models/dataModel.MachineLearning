@@ -152,7 +152,7 @@ MLProcessing:
 }  
 ```  
 #### MLProcessing NGSI-LD normalisé Exemple  
-Voici un exemple d'un traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLProcessing:01",  
