@@ -2,7 +2,7 @@
 
 ## Description 
 
-
+Subscription Query model for Machine Learning models
 ### Specification
 
 Link to the [specification](https://smart-data-models.github.io/dataModel.MachineLearning/SubscriptionQuery/doc/spec.md)
