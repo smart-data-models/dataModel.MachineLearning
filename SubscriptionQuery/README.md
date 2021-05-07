@@ -5,6 +5,8 @@
 Subscription Query model for Machine Learning models
 ### Specification
 
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.MachineLearning/SubscriptionQuery/swagger.yaml)
+
 Link to the [specification](https://smart-data-models.github.io/dataModel.MachineLearning/SubscriptionQuery/doc/spec.md)
 
 Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.MachineLearning/SubscriptionQuery/doc/spec_ES.md)
