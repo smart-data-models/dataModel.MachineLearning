@@ -1,6 +1,7 @@
 Entité : SubscriptionQuery  
 ==========================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Modèle de requête d'abonnement pour les modèles d'apprentissage automatique**.  
 
 ## Liste des propriétés  
@@ -161,7 +162,7 @@ SubscriptionQuery:
 }  
 ```  
 #### AbonnementQuery NGSI-v2 normalisé Exemple  
-Voici un exemple d'une SubscriptionQuery au format JSON-LD tel que normalisé. Cette requête est compatible avec la norme NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'une SubscriptionQuery au format JSON-LD tel que normalisé. Cette requête est compatible avec NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "Subscription.01",  
