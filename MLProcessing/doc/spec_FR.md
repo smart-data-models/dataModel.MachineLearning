@@ -1,6 +1,7 @@
 Entité : MLProcessing  
 =====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Modèle de données permettant de compiler les éléments relatifs à l'exécution d'un modèle d'apprentissage automatique**.  
 
 ## Liste des propriétés  
