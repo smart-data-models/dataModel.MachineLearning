@@ -1,6 +1,7 @@
 Entität: SubscriptionQuery  
 ==========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abonnement-Abfrage-Modell für Machine Learning-Modelle**  
 
 ## Liste der Eigenschaften  
