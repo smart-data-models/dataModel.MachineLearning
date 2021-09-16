@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.MLModel/SubscriptionQuery/schema.json",
     "title": " Smart Data Models - Machine Learning Subscription Query",
     "description": "Subscription Query model for Machine Learning models",
