@@ -6,7 +6,7 @@ Version: 0.0.1
 Data model for compilation of the elements about the execution of a machine learning model.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/MLProcessing/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/MLProcessing/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/MLProcessing/doc/spec.md)
 
