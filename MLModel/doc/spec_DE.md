@@ -245,7 +245,7 @@ MLModel:
 }  
 ```  
 #### MLModell NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein MLModel im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein MLModel im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLModel:01",  
