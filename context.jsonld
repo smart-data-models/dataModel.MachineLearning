@@ -21,6 +21,7 @@
         "inputAttributes": "https://smartdatamodels.org/dataModel.MachineLearning/inputAttributes",
         "mlFramework": "https://smartdatamodels.org/dataModel.MachineLearning/mlFramework",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "notification": "ngsi-ld:notification",
         "objective": "https://smartdatamodels.org/dataModel.MachineLearning/objective",
         "outputAttributes": "https://smartdatamodels.org/dataModel.MachineLearning/outputAttributes",
