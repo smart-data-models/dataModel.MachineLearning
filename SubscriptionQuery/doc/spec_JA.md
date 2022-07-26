@@ -1,15 +1,15 @@
-Entidad: SubscriptionQuery  
+Entityです。SubscriptionQuery  
 ==========================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Modelo de consulta para modelos de aprendizaje automático**  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**機械学習モデルのサブスクリプションクエリモデル**。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `alternateName`: Un nombre alternativo para este artículo  - `csf`: Filtro de fuente de contexto al que deben ajustarse los registros de fuente de contexto que describen las fuentes de contexto que se utilizarán para recuperar las entidades. Definido en la norma NGSI-LD.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `entities`: Id. de entidad, patrón de id. y tipos de entidad que deben coincidir con las entidades para ser recuperadas. Definido en la norma NGSI-LD.  - `expiresAt`: Fecha de caducidad de la suscripción. Definida en la norma NGSI-LD.  - `geoQ`: Geo-Query que debe ser comparada por las Entidades para ser recuperada. Definido en la norma NGSI-LD.  - `id`: Identificador único de la entidad  - `name`: El nombre de este artículo.  - `notification`: Parámetros de la notificación para la suscripción. Definidos en la norma NGSI-LD.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `q`: Consulta que debe ser emparejada por las Entidades para ser recuperada. Definido en la norma NGSI-LD.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `subscriptionName`: Un nombre (corto) dado a esta Suscripción. Definido en la norma NGSI-LD.  - `temporalQ`: La consulta temporal debe estar presente sólo para la operación "Consulta de la evolución temporal de las entidades". Definido en la norma NGSI-LD.  - `throttling`: Período mínimo de tiempo en segundos que debe transcurrir entre dos notificaciones consecutivas. Definido en la norma NGSI-LD.  - `type`: Tiene que ser SubscriptionQuery. Enum:'SubscriptionQuery'  - `watchedAttributes`: Lista de Atributos que deben ser comparados por las Entidades para ser recuperados. Si no está presente, se recuperarán todos los atributos. Definido en la norma NGSI-LD.    
-Propiedades requeridas  
-- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+- `alternateName`: このアイテムの別称  - `csf`: Entityを検索するために使用するContext Sourceを記述したContext Source RegistrationがマッチさせるContext Source Filterである。NGSI-LD規格で定義されている。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `entities`: 検索されるためにEntityによってマッチされなければならないEntity ID、idパターン、Entityタイプ。NGSI-LD規格で定義されている。  - `expiresAt`: サブスクリプションの有効期限。NGSI-LD規格で定義されています。  - `geoQ`: 検索されるためにEntityがマッチさせなければならないGeo-Query。NGSI-LD規格で定義されている。  - `id`: エンティティのユニークな識別子  - `name`: このアイテムの名前です。  - `notification`: サブスクリプションに対する通知のパラメータ。NGSI-LD規格で定義されています。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `q`: 検索されるためにEntityによってマッチされなければならないクエリ。NGSI-LD規格で定義されている。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `subscriptionName`: このサブスクリプションに与えられた（短い）名前。NGSI-LD規格で定義されています。  - `temporalQ`: Temporal Queryは、「Query Temporal Evolution of Entities」オペレーションでのみ存在する。NGSI-LD規格で定義されています。  - `throttling`: 連続する2つの通知の間に経過しなければならない最小の時間（秒）。NGSI-LD規格で定義されている。  - `type`: SubscriptionQueryである必要があります。Enum:'SubscriptionQuery'  - `watchedAttributes`: 検索するためにEntityが一致させなければならないAttributeのリスト。存在しない場合は、すべての属性が検索される。NGSI-LD規格で定義されている。    
+必須項目  
+- `id`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SubscriptionQuery:    
@@ -171,9 +171,9 @@ SubscriptionQuery:
   type: object    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### SubscriptionQuery NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de una SubscriptionQuery en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### SubscriptionQuery NGSI-v2 key-values の例。  
+JSON-LD形式でkey-valuesとしたSubscriptionQueryの例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:Subscription:01",  
@@ -201,8 +201,8 @@ SubscriptionQuery:
   }  
 }  
 ```  
-#### SubscriptionQuery NGSI-v2 normalizado Ejemplo  
-He aquí un ejemplo de SubscriptionQuery en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### SubscriptionQuery NGSI-v2 正規化例  
+ここでは、正規化されたJSON-LD形式のSubscriptionQueryの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキスト・データを返します。  
 ```json  
 {  
   "id": "Subscription.01",  
@@ -242,8 +242,8 @@ SubscriptionQuery:
   }  
 }  
 ```  
-#### SubscriptionQuery NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de una SubscriptionQuery en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### SubscriptionQuery NGSI-LD key-values の例。  
+ここでは、SubscriptionQueryをkey-valuesとしてJSON-LD形式で記述した例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:Subscription:01",  
@@ -274,8 +274,8 @@ SubscriptionQuery:
   ]  
 }  
 ```  
-#### SubscriptionQuery NGSI-LD normalizado Ejemplo  
-He aquí un ejemplo de SubscriptionQuery en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### SubscriptionQuery NGSI-LDの正規化例  
+ここでは、正規化されたJSON-LD形式のSubscriptionQueryの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:Subscription:01",  
@@ -318,4 +318,4 @@ SubscriptionQuery:
   ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。

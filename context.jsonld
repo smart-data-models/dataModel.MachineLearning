@@ -1,0 +1,47 @@
+{
+    "@context": {
+        "acceptableDataSources": "https://smartdatamodels.org/dataModel.MachineLearning/acceptableDataSources",
+        "algorithm": "https://smartdatamodels.org/dataModel.MachineLearning/algorithm",
+        "alternateName": "https://smartdatamodels.org/alternateName",
+        "connectionParameters": "https://smartdatamodels.org/dataModel.MachineLearning/connectionParameters",
+        "csf": "ngsi-ld:csf",
+        "dataProvider": "https://smartdatamodels.org/dataProvider",
+        "dateCreated": "https://smartdatamodels.org/dateCreated",
+        "dateModified": "https://smartdatamodels.org/dateModified",
+        "description": "http://purl.org/dc/terms/description",
+        "dockerImage": "https://smartdatamodels.org/dataModel.MachineLearning/dockerImage",
+        "dueDate": "https://smartdatamodels.org/dataModel.MachineLearning/dueDate",
+        "entities": "ngsi-ld:entities",
+        "expiresAt": {
+            "@id": "ngsi-ld:expiresAt",
+            "@type": "DateTime"
+        },
+        "geoQ": "ngsi-ld:geoQ",
+        "id": "@id",
+        "inputAttributes": "https://smartdatamodels.org/dataModel.MachineLearning/inputAttributes",
+        "mlFramework": "https://smartdatamodels.org/dataModel.MachineLearning/mlFramework",
+        "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "notification": "ngsi-ld:notification",
+        "objective": "https://smartdatamodels.org/dataModel.MachineLearning/objective",
+        "outputAttributes": "https://smartdatamodels.org/dataModel.MachineLearning/outputAttributes",
+        "outputDataTypes": "https://smartdatamodels.org/dataModel.MachineLearning/outputDataTypes",
+        "owner": "https://smartdatamodels.org/owner",
+        "q": "ngsi-ld:q",
+        "refMLModel": "https://smartdatamodels.org/dataModel.MachineLearning/refMLModel",
+        "refMLProcessing": "https://smartdatamodels.org/dataModel.MachineLearning/refMLProcessing",
+        "refSubscriptionQuery": "https://smartdatamodels.org/dataModel.MachineLearning/refSubscriptionQuery",
+        "seeAlso": "https://smartdatamodels.org/seeAlso",
+        "source": "https://smartdatamodels.org/source",
+        "subscriptionName": "ngsi-ld:subscriptionName",
+        "temporalQ": "ngsi-ld:temporalQ",
+        "throttling": "ngsi-ld:throttling",
+        "type": "@type",
+        "typeOfAlgorithm": "https://smartdatamodels.org/dataModel.MachineLearning/typeOfAlgorithm",
+        "version": "https://smartdatamodels.org/dataModel.MachineLearning/version",
+        "watchedAttributes": {
+            "@id": "ngsi-ld:watchedAttributes",
+            "@type": "@vocab"
+        }
+    }
+}

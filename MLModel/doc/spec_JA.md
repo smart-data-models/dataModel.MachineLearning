@@ -1,15 +1,15 @@
-Entidad: MLModel  
-================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLModel/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Modelo de datos para la compilación de los elementos de un modelo de aprendizaje automático.**  
+エンティティMLModel  
+=============  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLModel/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**機械学習モデルを構成する要素をまとめたデータモデルです。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `acceptableDataSources`: Tipo válido de fuentes de datos de entrada para ejecutar el modelo de aprendizaje automático  - `algorithm`: El algoritmo utilizado por el modelo de aprendizaje automático subyacente (por ejemplo, regresión lineal, k-means, SVM, MLP,...)  - `alternateName`: Un nombre alternativo para este artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dockerImage`: Imagen Docker que contiene el modelo de aprendizaje automático  - `id`: Identificador único de la entidad  - `inputAttributes`: Lista separada por comas de nombres de atributos (que deben tener un tipo determinado por definición).  - `mlFramework`: El marco de aprendizaje automático que se ha utilizado para preparar el modelo (por ejemplo, scikit-learn, H2O, Spark MLib, etc.)  - `name`: El nombre de este artículo.  - `outputAttributes`: Lista separada por comas de los nombres de los atributos utilizados para publicar los resultados.  - `outputDataTypes`: Tipo de datos de salida producidos por el modelo de aprendizaje automático  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refMLProcessing`:   - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `typeOfAlgorithm`: enumeración  - `version`: Versión del modelo.    
-Propiedades requeridas  
-- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+- `acceptableDataSources`: 機械学習モデルを実行するための入力データソースの有効なタイプ  - `algorithm`: 機械学習モデルが使用するアルゴリズム（例：線形回帰、k-means、SVM、MLP...  - `alternateName`: このアイテムの別称  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `dockerImage`: 機械学習モデルを含むDockerイメージ  - `id`: エンティティのユニークな識別子  - `inputAttributes`: コンマで区切られた属性名のリスト（定義により指定されたタイプを持つべきもの）。  - `mlFramework`: モデルの作成に使用された機械学習フレームワーク（例：scikit-learn、H2O、Spark MLibなど  - `name`: このアイテムの名前です。  - `outputAttributes`: 結果を公開するために使用される属性名のカンマ区切りのリスト。  - `outputDataTypes`: 機械学習モデルが生成する出力データの種類  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refMLProcessing`:   - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `typeOfAlgorithm`: enumeration  - `version`: モデルのバージョン。    
+必須項目  
+- `id`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 MLModel:    
@@ -153,9 +153,9 @@ MLModel:
   type: object    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### MLModel NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un MLModel en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### MLModel NGSI-v2 key-values の例。  
+MLModelをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "MLModel.01",  
@@ -176,8 +176,8 @@ MLModel:
   ]  
 }  
 ```  
-#### MLModel NGSI-v2 normalizado Ejemplo  
-Aquí hay un ejemplo de un MLModel en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### MLModel NGSI-v2 正規化例  
+ここでは、正規化されたJSON-LD形式のMLModelの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "MLModel.01",  
@@ -219,8 +219,8 @@ MLModel:
   }  
 }  
 ```  
-#### MLModel NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un MLModel en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### MLModel NGSI-LD key-values の例。  
+MLModelをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLModel:01",  
@@ -244,8 +244,8 @@ MLModel:
   ]  
 }  
 ```  
-#### MLModel NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un MLModel en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### MLModel NGSI-LDの正規化例  
+ここでは、正規化されたJSON-LD形式のMLModelの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLModel:01",  
@@ -290,4 +290,4 @@ MLModel:
   ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。

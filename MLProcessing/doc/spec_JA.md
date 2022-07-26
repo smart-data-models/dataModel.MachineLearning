@@ -1,15 +1,15 @@
-Entité : MLProcessing  
-=====================  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Modèle de données permettant de compiler les éléments relatifs à l'exécution d'un modèle d'apprentissage automatique**.  
+エンティティMLProcessing  
+==================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**機械学習モデルの実行に関する要素をまとめるためのデータモデルです。  
 
-## Liste des propriétés  
+## プロパティのリスト  
 
-- `alternateName`: Un nom alternatif pour cet élément  - `connectionParameters`: Paramètres d'exécution de la connexion avec le système  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dueDate`: Données/temps prévus pour l'exécution du traitement (pour les versions ultérieures, afin de permettre des traitements planifiés)  - `id`: Identifiant unique de l'entité  - `name`: Le nom de cet élément.  - `objective`: Objectif du traitement  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `refMLModel`: Relation ciblant le modèle d'apprentissage automatique à utiliser pour le traitement.  - `refSubscriptionQuery`: Relation ciblant la requête d'abonnement à utiliser par le modèle d'apprentissage automatique.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.    
-Propriétés requises  
-## Description des propriétés du modèle de données  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
+- `alternateName`: このアイテムの別称  - `connectionParameters`: システムとの接続を実行するためのパラメータ  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `dueDate`: 処理を実行する予定のデータ／時間（以降のバージョンでは、計画的な処理を可能にするために  - `id`: エンティティのユニークな識別子  - `name`: このアイテムの名前です。  - `objective`: 処理の目的  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refMLModel`: 処理に使用する機械学習モデルを対象とした関係  - `refSubscriptionQuery`: 機械学習モデルで使用するサブスクリプション・クエリをターゲットとする関係。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。    
+必須項目  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 MLProcessing:    
@@ -138,9 +138,9 @@ MLProcessing:
   type: object    
 ```  
 </details>    
-## Exemples de charges utiles  
-#### MLProcessing NGSI-v2 key-values Exemple  
-Voici un exemple d'un traitement ML au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+## ペイロードの例  
+#### MLProcessing NGSI-v2 key-values の例。  
+ここでは、JSON-LD形式でkey-valuesとしてMLProcessingの例を示します。これは`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返すことができます。  
 ```json  
 {  
   "id":"urn:ngsi-ld:MLProcessing:01",  
@@ -149,8 +149,8 @@ MLProcessing:
   "refSubscriptionQuery": "urn:ngsi-ld:SubscriptionQuery:01"  
 }  
 ```  
-#### MLProcessing NGSI-v2 normalisé Exemple  
-Voici un exemple d'un traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### MLProcessing NGSI-v2の正規化例  
+ここでは、正規化されたJSON-LD形式のMLProcessingの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLProcessing:01",  
@@ -165,8 +165,8 @@ MLProcessing:
   }  
 }  
 ```  
-#### MLProcessing NGSI-LD key-values Exemple  
-Voici un exemple d'un traitement ML au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### MLProcessing NGSI-LD key-valuesの例。  
+ここでは、JSON-LD形式でkey-valuesとしてMLProcessingの例を示します。これは、`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLProcessing:01",  
@@ -178,8 +178,8 @@ MLProcessing:
   ]  
 }  
 ```  
-#### MLProcessing NGSI-LD normalisé Exemple  
-Voici un exemple de traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### MLProcessing NGSI-LDの正規化例  
+ここでは、JSON-LD形式のMLProcessingを正規化した例を紹介します。これは、オプションを使わない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLProcessing:01",  
@@ -197,4 +197,4 @@ MLProcessing:
   ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
