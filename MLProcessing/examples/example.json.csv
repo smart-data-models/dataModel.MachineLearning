@@ -1,0 +1,2 @@
+"id_", "type_", "refMLModel_", "refSubscriptionQuery_"
+"urn:ngsi-ld:MLProcessing:01", "MLProcessing", "urn:ngsi-ld:MLModel:01", "urn:ngsi-ld:SubscriptionQuery:01"
