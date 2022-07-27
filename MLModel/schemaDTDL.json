@@ -1,0 +1,171 @@
+{
+    "@id": "dtmi:com:ngsi-ld:MLModel;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - Machine Learning Model adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/MLModel/schema.json",
+    "description": "Data model for compilation of the elements of a machine learning model.",
+    "displayName": "MLModel",
+    "contents": [
+        {
+            "name": "algorithm",
+            "writable": true,
+            "displayName": "algorithm",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The algorithm used by the underlying Machine Learning model (e.g. linear regression, k-means, SVM, MLP,...)"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dockerImage",
+            "writable": true,
+            "displayName": "dockerImage",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Docker image containing the Machine Learning model"
+        },
+        {
+            "name": "mlFramework",
+            "writable": true,
+            "displayName": "mlFramework",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The Machine Learning framework that has been used to prepare the model (e.g., scikit-learn, H2O, Spark MLib, etc)"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "typeOfAlgorithm",
+            "writable": true,
+            "displayName": "typeOfAlgorithm",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Enumeration"
+        },
+        {
+            "name": "version",
+            "writable": true,
+            "displayName": "version",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Version of the model."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "acceptableDataSources",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Valid type of input data sources for running the Machine Learning Model",
+            "displayName": "acceptableDataSources"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "inputAttributes",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Comma-separated list of attributes names (that should have a given type by definition).",
+            "displayName": "inputAttributes"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "outputAttributes",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Comma-separated list of attributes names used to publish the results.",
+            "displayName": "outputAttributes"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "outputDataTypes",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Type of output data produced by the Machine Learning Model",
+            "displayName": "outputDataTypes"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refMLProcessing",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "",
+            "displayName": "refMLProcessing"
+        }
+    ]
+}
