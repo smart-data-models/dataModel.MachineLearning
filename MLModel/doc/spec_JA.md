@@ -1,15 +1,17 @@
-エンティティMLModel  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティMLModel  
 =============  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLModel/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**機械学習モデルを構成する要素をまとめたデータモデルです。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**機械学習モデルの要素をまとめるためのデータモデル。  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `acceptableDataSources`: 機械学習モデルを実行するための入力データソースの有効なタイプ  - `algorithm`: 機械学習モデルが使用するアルゴリズム（例：線形回帰、k-means、SVM、MLP...  - `alternateName`: このアイテムの別称  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `dockerImage`: 機械学習モデルを含むDockerイメージ  - `id`: エンティティのユニークな識別子  - `inputAttributes`: コンマで区切られた属性名のリスト（定義により指定されたタイプを持つべきもの）。  - `mlFramework`: モデルの作成に使用された機械学習フレームワーク（例：scikit-learn、H2O、Spark MLibなど  - `name`: このアイテムの名前です。  - `outputAttributes`: 結果を公開するために使用される属性名のカンマ区切りのリスト。  - `outputDataTypes`: 機械学習モデルが生成する出力データの種類  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refMLProcessing`:   - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `typeOfAlgorithm`: enumeration  - `version`: モデルのバージョン。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+- `acceptableDataSources`: 機械学習モデルを実行するために有効な入力データソースの種類  - `algorithm`: 基礎となる機械学習モデルで使用されるアルゴリズム（例：線形回帰，k-means，SVM，MLP，...）．  - `alternateName`: この項目の別称  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `dockerImage`: 機械学習モデルを格納したDockerイメージ  - `id`: エンティティの一意な識別子  - `inputAttributes`: カンマで区切られた属性名のリスト（定義上、指定された型を持つ必要があります）。  - `mlFramework`: モデルを準備するために使用した機械学習フレームワーク（例：scikit-learn、H2O、Spark MLib、など）  - `name`: このアイテムの名称です。  - `outputAttributes`: 結果を公開するために使用される属性名のカンマ区切りリスト。  - `outputDataTypes`: 機械学習モデルが生成する出力データの種類  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refMLProcessing`:   - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ。MLModelでなければならない。  - `typeOfAlgorithm`: 列挙  - `version`: モデルのバージョン。    
+必要なプロパティ  
+- `id`  - `type`  ## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 MLModel:    
@@ -136,8 +138,15 @@ MLModel:
       type: string    
       x-ngsi:    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be MLModel'    
+      enum:    
+        - MLModel    
+      type: string    
+      x-ngsi:    
+        type: Property    
     typeOfAlgorithm:    
-      description: enumeration    
+      description: Enumeration    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -151,11 +160,17 @@ MLModel:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/MLModel/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.MLModel/MLModel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
-#### MLModel NGSI-v2 key-values の例。  
-MLModelをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### MLModel NGSI-v2 key-value の例。  
+ここでは、MLModelをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "MLModel.01",  
@@ -164,7 +179,7 @@ MLModel:
   "description": "Predicts water consumption based on …",  
   "dockerImage": "Docker image containing the model",  
   "algorithm": "k-means",  
-  "version": 12,  
+  "version": "12",  
   "inputAttributes": [  
     "minFlow",  
     "maxFlow",  
@@ -177,7 +192,7 @@ MLModel:
 }  
 ```  
 #### MLModel NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のMLModelの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、MLModel を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合，NGSI-v2と互換性があり，個々のエンティティのコンテクストデータを返す。  
 ```json  
 {  
   "id": "MLModel.01",  
@@ -219,75 +234,73 @@ MLModel:
   }  
 }  
 ```  
-#### MLModel NGSI-LD key-values の例。  
-MLModelをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### MLModel NGSI-LD key-value 例  
+ここでは、MLModelをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:MLModel:01",  
-  "type": "MLModel",  
-  "name": "Water consumption prediction",  
-  "description": "Predicts water consumption based on â€¦",  
-  "dockerImage": "Docker image containing the model",  
-  "algorithm": "k-means",  
-  "version": 12,  
-  "inputAttributes": [  
-    "minFlow",  
-    "maxFlow",  
-    "waterConsumption"  
-  ],  
-  "outputAttributes": [  
-    "consumptionNextDay",  
-    "consumptionNextWeek"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:MLModel:01",  
+    "type": "MLModel",  
+    "algorithm": "k-means",  
+    "description": "Predicts water consumption based on \u2026",  
+    "dockerImage": "Docker image containing the model",  
+    "inputAttributes": [  
+        "minFlow",  
+        "maxFlow",  
+        "waterConsumption"  
+    ],  
+    "name": "Water consumption prediction",  
+    "outputAttributes": [  
+        "consumptionNextDay",  
+        "consumptionNextWeek"  
+    ],  
+    "version": 12,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### MLModel NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のMLModelの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### MLModel NGSI-LD 正規化例  
+MLModel を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合，NGSI-LDと互換性があり，個々のエンティティのコンテクストデータを返す。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:MLModel:01",  
-  "type": "MLModel",  
-  "name": {  
-    "type": "Property",  
-    "value": "Water consumption prediction"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Predicts water consumption based "  
-  },  
-  "dockerImage": {  
-    "type": "Property",  
-    "value": "Docker image containing the model"  
-  },  
-  "algorithm": {  
-    "type": "Property",  
-    "value": "k-means"  
-  },  
-  "version": {  
-    "type": "Property",  
-    "value": "12"  
-  },  
-  "inputAttributes": {  
-    "type": "Property",  
-    "value": [  
-      "minFlow",  
-      "maxFlow",  
-      "waterConsumption"  
-    ]  
-  },  
-  "outputAttributes": {  
-    "type": "Property",  
-    "value": [  
-      "consumptionNextDay",  
-      "consumptionNextWeek"  
-    ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:MLModel:01",  
+    "type": "MLModel",  
+    "algorithm": {  
+        "type": "Property",  
+        "value": "k-means"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Predicts water consumption based "  
+    },  
+    "dockerImage": {  
+        "type": "Property",  
+        "value": "Docker image containing the model"  
+    },  
+    "inputAttributes": {  
+        "type": "Property",  
+        "value": [  
+            "minFlow",  
+            "maxFlow",  
+            "waterConsumption"  
+        ]  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Water consumption prediction"  
+    },  
+    "outputAttributes": {  
+        "type": "Property",  
+        "value": [  
+            "consumptionNextDay",  
+            "consumptionNextWeek"  
+        ]  
+    },  
+    "version": {  
+        "type": "Property",  
+        "value": "12"  
+    },  
+    "@context": []  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
