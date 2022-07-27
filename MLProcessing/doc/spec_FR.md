@@ -1,12 +1,14 @@
-Entité : MLProcessing  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : MLProcessing  
 =====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Modèle de données permettant de compiler les éléments relatifs à l'exécution d'un modèle d'apprentissage automatique**.  
+version : 0.0.2  
 
 ## Liste des propriétés  
 
-- `alternateName`: Un nom alternatif pour cet élément  - `connectionParameters`: Paramètres d'exécution de la connexion avec le système  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dueDate`: Données/temps prévus pour l'exécution du traitement (pour les versions ultérieures, afin de permettre des traitements planifiés)  - `id`: Identifiant unique de l'entité  - `name`: Le nom de cet élément.  - `objective`: Objectif du traitement  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `refMLModel`: Relation ciblant le modèle d'apprentissage automatique à utiliser pour le traitement.  - `refSubscriptionQuery`: Relation ciblant la requête d'abonnement à utiliser par le modèle d'apprentissage automatique.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.    
+- `alternateName`: Un nom alternatif pour cet élément  - `connectionParameters`: Paramètres d'exécution de la connexion avec le système  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dueDate`: Données/temps prévus pour l'exécution du traitement (pour les versions ultérieures, afin de permettre des traitements planifiés)  - `id`: Identifiant unique de l'entité  - `name`: Le nom de cet élément.  - `objective`: Objectif du traitement  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `refMLModel`: Relation ciblant le modèle d'apprentissage automatique à utiliser pour le traitement.  - `refSubscriptionQuery`: Relation ciblant la requête d'abonnement à utiliser par le modèle d'apprentissage automatique.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit s'agir de MLProcessing    
 Propriétés requises  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
@@ -134,8 +136,21 @@ MLProcessing:
       type: string    
       x-ngsi:    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be MLProcessing'    
+      enum:    
+        - MLProcessing    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.MLModel/MLModel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Exemples de charges utiles  
@@ -150,7 +165,7 @@ MLProcessing:
 }  
 ```  
 #### MLProcessing NGSI-v2 normalisé Exemple  
-Voici un exemple d'un traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:MLProcessing:01",  
@@ -169,32 +184,30 @@ MLProcessing:
 Voici un exemple d'un traitement ML au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:MLProcessing:01",  
-  "type": "MLProcessing",  
-  "refMLModel": "urn:ngsi-ld:MLModel:01",  
-  "refSubscriptionQuery": "urn:ngsi-ld:SubscriptionQuery:01",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:MLProcessing:01",  
+    "type": "MLProcessing",  
+    "refMLModel": "urn:ngsi-ld:MLModel:01",  
+    "refSubscriptionQuery": "urn:ngsi-ld:SubscriptionQuery:01",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"  
+    ]  
 }  
 ```  
 #### MLProcessing NGSI-LD normalisé Exemple  
-Voici un exemple de traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un traitement ML au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:MLProcessing:01",  
-  "type": "MLProcessing",  
-  "refMLModel": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:MLModel:01"  
-  },  
-  "refSubscriptionQuery": {  
-    "type": "string",  
-    "value": "urn:ngsi-ld:SubscriptionQuery:01"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:MLProcessing:01",  
+    "type": "MLProcessing",  
+    "refMLModel": {  
+        "type": "string",  
+        "value": "urn:ngsi-ld:MLModel:01"  
+    },  
+    "refSubscriptionQuery": {  
+        "type": "string",  
+        "value": "urn:ngsi-ld:SubscriptionQuery:01"  
+    },  
+    "@context": []  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
