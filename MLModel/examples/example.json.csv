@@ -1,0 +1,2 @@
+"id_", "type_", "name_", "description_", "dockerImage_", "algorithm_", "version_", "inputAttributes__0_", "inputAttributes__1_", "inputAttributes__2_", "outputAttributes__0_", "outputAttributes__1_"
+"MLModel.01", "MLModel", "Water consumption prediction", "Predicts water consumption based on …", "Docker image containing the model", "k-means", "12", "minFlow", "maxFlow", "waterConsumption", "consumptionNextDay", "consumptionNextWeek"
