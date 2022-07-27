@@ -122,8 +122,15 @@ MLModel:
       type: string
       x-ngsi:
         type: Property
+    type:
+      description: 'NGSI entity type. It has to be MLModel'
+      enum:
+        - MLModel
+      type: string
+      x-ngsi:
+        type: Property
     typeOfAlgorithm:
-      description: enumeration
+      description: Enumeration
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -142,4 +149,4 @@ MLModel:
   x-license-url: https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/MLModel/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.MLModel/MLModel/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
