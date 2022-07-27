@@ -1,12 +1,14 @@
-Entité : MLModel  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : MLModel  
 ================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLModel/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Modèle de données pour la compilation des éléments d'un modèle d'apprentissage automatique.**  
+version : 0.0.2  
 
 ## Liste des propriétés  
 
-- `acceptableDataSources`: Type valide de sources de données d'entrée pour l'exécution du modèle d'apprentissage automatique.  - `algorithm`: L'algorithme utilisé par le modèle d'apprentissage automatique sous-jacent (par exemple, régression linéaire, k-means, SVM, MLP,...).  - `alternateName`: Un nom alternatif pour cet élément  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dockerImage`: Image Docker contenant le modèle d'apprentissage automatique  - `id`: Identifiant unique de l'entité  - `inputAttributes`: Liste de noms d'attributs séparés par des virgules (qui devraient avoir un type donné par définition).  - `mlFramework`: Le cadre d'apprentissage automatique qui a été utilisé pour préparer le modèle (par exemple, scikit-learn, H2O, Spark MLib, etc.).  - `name`: Le nom de cet élément.  - `outputAttributes`: Liste, séparée par des virgules, des noms d'attributs utilisés pour publier les résultats.  - `outputDataTypes`: Type de données de sortie produites par le modèle d'apprentissage automatique.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `refMLProcessing`:   - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `typeOfAlgorithm`: énumération  - `version`: Version du modèle.    
+- `acceptableDataSources`: Type valide de sources de données d'entrée pour l'exécution du modèle d'apprentissage automatique.  - `algorithm`: L'algorithme utilisé par le modèle d'apprentissage automatique sous-jacent (par exemple, régression linéaire, k-means, SVM, MLP,...).  - `alternateName`: Un nom alternatif pour cet élément  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dockerImage`: Image Docker contenant le modèle d'apprentissage automatique  - `id`: Identifiant unique de l'entité  - `inputAttributes`: Liste de noms d'attributs séparés par des virgules (qui devraient avoir un type donné par définition).  - `mlFramework`: Le cadre d'apprentissage automatique qui a été utilisé pour préparer le modèle (par exemple, scikit-learn, H2O, Spark MLib, etc.).  - `name`: Le nom de cet élément.  - `outputAttributes`: Liste, séparée par des virgules, des noms d'attributs utilisés pour publier les résultats.  - `outputDataTypes`: Type de données de sortie produites par le modèle d'apprentissage automatique.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `refMLProcessing`:   - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit être MLModel  - `typeOfAlgorithm`: Énumération  - `version`: Version du modèle.    
 Propriétés requises  
 - `id`  - `type`  ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
@@ -136,8 +138,15 @@ MLModel:
       type: string    
       x-ngsi:    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be MLModel'    
+      enum:    
+        - MLModel    
+      type: string    
+      x-ngsi:    
+        type: Property    
     typeOfAlgorithm:    
-      description: enumeration    
+      description: Enumeration    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -151,6 +160,12 @@ MLModel:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/MLModel/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.MLModel/MLModel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Exemples de charges utiles  
@@ -164,7 +179,7 @@ MLModel:
   "description": "Predicts water consumption based on …",  
   "dockerImage": "Docker image containing the model",  
   "algorithm": "k-means",  
-  "version": 12,  
+  "version": "12",  
   "inputAttributes": [  
     "minFlow",  
     "maxFlow",  
@@ -220,74 +235,72 @@ MLModel:
 }  
 ```  
 #### MLModel Valeurs-clés NGSI-LD Exemple  
-Voici un exemple de MLModel au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un MLModel au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:MLModel:01",  
-  "type": "MLModel",  
-  "name": "Water consumption prediction",  
-  "description": "Predicts water consumption based on â€¦",  
-  "dockerImage": "Docker image containing the model",  
-  "algorithm": "k-means",  
-  "version": 12,  
-  "inputAttributes": [  
-    "minFlow",  
-    "maxFlow",  
-    "waterConsumption"  
-  ],  
-  "outputAttributes": [  
-    "consumptionNextDay",  
-    "consumptionNextWeek"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:MLModel:01",  
+    "type": "MLModel",  
+    "algorithm": "k-means",  
+    "description": "Predicts water consumption based on \u2026",  
+    "dockerImage": "Docker image containing the model",  
+    "inputAttributes": [  
+        "minFlow",  
+        "maxFlow",  
+        "waterConsumption"  
+    ],  
+    "name": "Water consumption prediction",  
+    "outputAttributes": [  
+        "consumptionNextDay",  
+        "consumptionNextWeek"  
+    ],  
+    "version": 12,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"  
+    ]  
 }  
 ```  
 #### MLModel NGSI-LD normalisé Exemple  
-Voici un exemple de MLModel au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de MLModel au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:MLModel:01",  
-  "type": "MLModel",  
-  "name": {  
-    "type": "Property",  
-    "value": "Water consumption prediction"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Predicts water consumption based "  
-  },  
-  "dockerImage": {  
-    "type": "Property",  
-    "value": "Docker image containing the model"  
-  },  
-  "algorithm": {  
-    "type": "Property",  
-    "value": "k-means"  
-  },  
-  "version": {  
-    "type": "Property",  
-    "value": "12"  
-  },  
-  "inputAttributes": {  
-    "type": "Property",  
-    "value": [  
-      "minFlow",  
-      "maxFlow",  
-      "waterConsumption"  
-    ]  
-  },  
-  "outputAttributes": {  
-    "type": "Property",  
-    "value": [  
-      "consumptionNextDay",  
-      "consumptionNextWeek"  
-    ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:MLModel:01",  
+    "type": "MLModel",  
+    "algorithm": {  
+        "type": "Property",  
+        "value": "k-means"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Predicts water consumption based "  
+    },  
+    "dockerImage": {  
+        "type": "Property",  
+        "value": "Docker image containing the model"  
+    },  
+    "inputAttributes": {  
+        "type": "Property",  
+        "value": [  
+            "minFlow",  
+            "maxFlow",  
+            "waterConsumption"  
+        ]  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Water consumption prediction"  
+    },  
+    "outputAttributes": {  
+        "type": "Property",  
+        "value": [  
+            "consumptionNextDay",  
+            "consumptionNextWeek"  
+        ]  
+    },  
+    "version": {  
+        "type": "Property",  
+        "value": "12"  
+    },  
+    "@context": []  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
