@@ -120,6 +120,13 @@ MLProcessing:
       type: string
       x-ngsi:
         type: Property
+    type:
+      description: 'NGSI entity type. It has to be MLProcessing'
+      enum:
+        - MLProcessing
+      type: string
+      x-ngsi:
+        type: Property
   required: []
   type: object
   x-derived-from: ""
@@ -127,4 +134,4 @@ MLProcessing:
   x-license-url: https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.MLModel/MLModel/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
