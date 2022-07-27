@@ -1,0 +1,2 @@
+"id_", "type_", "algorithm_", "description_", "dockerImage_", "inputAttributes__0_", "inputAttributes__1_", "inputAttributes__2_", "name_", "outputAttributes__0_", "outputAttributes__1_", "version_", "@context__0_"
+"urn:ngsi-ld:MLModel:01", "MLModel", "k-means", "Predicts water consumption based on …", "Docker image containing the model", "minFlow", "maxFlow", "waterConsumption", "Water consumption prediction", "consumptionNextDay", "consumptionNextWeek", "12", "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"
