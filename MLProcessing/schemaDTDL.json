@@ -1,0 +1,127 @@
+{
+    "@id": "dtmi:com:ngsi-ld:MLProcessing;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - Machine Learning Processing adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/MLProcessing/schema.json",
+    "description": "Data model for compilation of the elements about the execution of a machine learning model.",
+    "displayName": "MLProcessing",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dueDate",
+            "writable": true,
+            "displayName": "dueDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Expected data / time for running the processing (for later versions, to allow planned processings)"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "objective",
+            "writable": true,
+            "displayName": "objective",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Objective of the processing"
+        },
+        {
+            "name": "refMLModel",
+            "writable": true,
+            "displayName": "refMLModel"
+        },
+        {
+            "name": "refSubscriptionQuery",
+            "writable": true,
+            "displayName": "refSubscriptionQuery"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "connectionParameters",
+            "comment": "Parameters for running the connection with the system",
+            "displayName": "connectionParameters",
+            "fields": [
+                {
+                    "name": "port",
+                    "schema": "long"
+                },
+                {
+                    "name": "server",
+                    "schema": "string"
+                },
+                {
+                    "name": "user",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
