@@ -1,16 +1,16 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
--
- name: Fernando
- surname: Lopez
- mail: fernando.lopez@fiware.org
- organization: FIWARE Foundation
- project: Fiware4Water.eu
- comments:
--
- name: Benoit
- surname: Orihuela
- mail: benoit.orihuela@egm.io
- organization: EGM
- project: Fiware4Water.eu
- comments:
+- name: Fernando
+  surname: Lopez
+  mail: fernando.lopez@fiware.org
+  organization: FIWARE Foundation
+  project: Fiware4Water.eu
+  comments: 
+  year: 2022
+- name: Benoit
+  surname: Orihuela
+  mail: benoit.orihuela@egm.io
+  organization: EGM
+  project: Fiware4Water.eu
+  comments: 
+  year: 2022
