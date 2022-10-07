@@ -34,5 +34,7 @@
             "consumptionNextWeek"
         ]
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"
+    ]
 }
