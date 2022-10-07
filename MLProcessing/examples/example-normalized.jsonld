@@ -9,5 +9,7 @@
         "type": "string",
         "value": "urn:ngsi-ld:SubscriptionQuery:01"
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"
+    ]
 }
