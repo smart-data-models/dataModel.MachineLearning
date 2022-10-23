@@ -1,15 +1,31 @@
-Entité : SubscriptionQuery  
-==========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : SubscriptionQuery  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Modèle de requête d'abonnement pour les modèles d'apprentissage automatique**.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `alternateName`: Un nom alternatif pour cet élément  - `csf`: Filtre de source contextuelle auquel doivent correspondre les enregistrements de source contextuelle décrivant les sources contextuelles à utiliser pour récupérer les entités. Défini dans la norme NGSI-LD.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `entities`: Les identifiants d'entités, les modèles d'identifiants et les types d'entités qui doivent correspondre aux entités afin d'être récupérés. Défini dans la norme NGSI-LD.  - `expiresAt`: Date d'expiration de l'abonnement. Définie dans la norme NGSI-LD.  - `geoQ`: Requête géographique à laquelle doivent correspondre les entités pour être récupérées. Défini dans la norme NGSI-LD.  - `id`: Identifiant unique de l'entité  - `name`: Le nom de cet élément.  - `notification`: Paramètres de la notification pour l'abonnement. Définis dans la norme NGSI-LD.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `q`: Requête à laquelle les entités doivent correspondre pour pouvoir être récupérées. Définie dans la norme NGSI-LD.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `subscriptionName`: Un nom (court) donné à cet abonnement. Défini dans la norme NGSI-LD.  - `temporalQ`: L'interrogation temporelle doit être présente uniquement pour l'opération "Interroger l'évolution temporelle des entités". Défini dans la norme NGSI-LD.  - `throttling`: Période de temps minimale en secondes qui doit s'écouler entre deux notifications consécutives. Défini dans la norme NGSI-LD.  - `type`: Il doit s'agir de SubscriptionQuery. Enum : "SubscriptionQuery  - `watchedAttributes`: Liste des attributs que les entités doivent faire correspondre afin d'être récupérées. Si elle n'est pas présente, tous les attributs seront récupérés. Défini dans la norme NGSI-LD.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `alternateName[string]`: Un nom alternatif pour cet élément  - `csf[string]`: Filtre de source contextuelle auquel doivent correspondre les enregistrements de source contextuelle décrivant les sources contextuelles à utiliser pour récupérer les entités. Défini dans la norme NGSI-LD.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `entities[array]`: Les identifiants d'entités, les modèles d'identifiants et les types d'entités que les entités doivent faire correspondre pour pouvoir être récupérées. Défini dans la norme NGSI-LD.  - `expiresAt[string]`: Date d'expiration de l'abonnement. Définie dans la norme NGSI-LD.  - `geoQ[string]`: Requête géographique à laquelle doivent correspondre les entités pour être récupérées. Défini dans la norme NGSI-LD.  - `id[*]`: Identifiant unique de l'entité  - `name[string]`: Le nom de cet élément.  - `notification[object]`: Paramètres de la notification pour l'abonnement. Définis dans la norme NGSI-LD.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `q[string]`: Requête à laquelle les entités doivent correspondre pour pouvoir être récupérées. Définie dans la norme NGSI-LD.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `subscriptionName[string]`: Un nom (court) donné à cet abonnement. Défini dans la norme NGSI-LD.  - `temporalQ[string]`: L'interrogation temporelle doit être présente uniquement pour l'opération "Interroger l'évolution temporelle des entités". Défini dans la norme NGSI-LD.  - `throttling[string]`: Période de temps minimale en secondes qui doit s'écouler entre deux notifications consécutives. Défini dans la norme NGSI-LD.  - `type[string]`: Il doit s'agir de SubscriptionQuery. Enum : "SubscriptionQuery  - `watchedAttributes[array]`: Liste des attributs que les entités doivent faire correspondre afin d'être récupérées. Si elle n'est pas présente, tous les attributs seront récupérés. Défini dans la norme NGSI-LD.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SubscriptionQuery:    
@@ -169,11 +185,22 @@ SubscriptionQuery:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.MLModel/SubscriptionQuery/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### AbonnementQuery Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple d'une SubscriptionQuery au format JSON-LD sous forme de valeurs-clés. Cette requête est compatible avec NGSI-v2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Subscription:01",  
@@ -201,8 +228,10 @@ SubscriptionQuery:
   }  
 }  
 ```  
+</details>  
 #### AbonnementQuery NGSI-v2 normalisé Exemple  
 Voici un exemple d'une SubscriptionQuery au format JSON-LD tel que normalisé. Cette requête est compatible avec la norme NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Subscription.01",  
@@ -242,80 +271,92 @@ SubscriptionQuery:
   }  
 }  
 ```  
+</details>  
 #### SubscriptionQuery Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'une SubscriptionQuery au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Subscription:01",  
-  "type": "SubscriptionQuery",  
-  "entities": [  
-    {  
-      "type": "WaterConsumption"  
-    }  
-  ],  
-  "watchedAttributes": [  
-    "consumptionNextDay",  
-    "consumptionNextWeek"  
-  ],  
-  "q": "refCity==urn:ngsi-ld:City:Valbonne",  
-  "notification": {  
-    "attributes": [  
-      "consumptionNextDay",  
-      "consumptionNextWeek"  
+    "id": "urn:ngsi-ld:Subscription:01",  
+    "type": "SubscriptionQuery",  
+    "entities": [  
+        {  
+            "type": "WaterConsumption"  
+        }  
     ],  
-    "format": "keyValues",  
-    "endpoint": {  
-      "uri": "http://my-domain-name",  
-      "accept": "application/json"  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
-}  
-```  
-#### AbonnementQuery NGSI-LD normalisé Exemple  
-Voici un exemple d'une SubscriptionQuery au format JSON-LD tel que normalisé. Cette requête est compatible avec NGSI-LD lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-```json  
-{  
-  "id": "urn:ngsi-ld:Subscription:01",  
-  "type": "SubscriptionQuery",  
-  "entities": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "type": "WaterConsumption"  
-      }  
-    ]  
-  },  
-  "watchedAttributes": {  
-    "type": "Property",  
-    "value": [  
-      "consumptionNextDay",  
-      "consumptionNextWeek"  
-    ]  
-  },  
-  "q": {  
-    "type": "Property",  
-    "value": "refCity==urn:ngsi-ld:City:Valbonne"  
-  },  
-  "notification": {  
-    "type": "property",  
-    "value": {  
-      "attributes": [  
+    "notification": {  
+        "attributes": [  
+            "consumptionNextDay",  
+            "consumptionNextWeek"  
+        ],  
+        "format": "keyValues",  
+        "endpoint": {  
+            "uri": "http://my-domain-name",  
+            "accept": "application/json"  
+        }  
+    },  
+    "q": "refCity==urn:ngsi-ld:City:Valbonne",  
+    "watchedAttributes": [  
         "consumptionNextDay",  
         "consumptionNextWeek"  
-      ],  
-      "format": "keyValues",  
-      "endpoint": {  
-        "uri": "http://my-domain-name",  
-        "accept": "application/json"  
-      }  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    ],  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"  
+    ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details>  
+#### AbonnementQuery NGSI-LD normalisé Exemple  
+Voici un exemple d'une SubscriptionQuery au format JSON-LD tel que normalisé. Cette requête est compatible avec NGSI-LD lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Subscription:01",  
+    "type": "SubscriptionQuery",  
+    "entities": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "type": "WaterConsumption"  
+            }  
+        ]  
+    },  
+    "notification": {  
+        "type": "property",  
+        "value": {  
+            "attributes": [  
+                "consumptionNextDay",  
+                "consumptionNextWeek"  
+            ],  
+            "format": "keyValues",  
+            "endpoint": {  
+                "uri": "http://my-domain-name",  
+                "accept": "application/json"  
+            }  
+        }  
+    },  
+    "q": {  
+        "type": "Property",  
+        "value": "refCity==urn:ngsi-ld:City:Valbonne"  
+    },  
+    "watchedAttributes": {  
+        "type": "Property",  
+        "value": [  
+            "consumptionNextDay",  
+            "consumptionNextWeek"  
+        ]  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
