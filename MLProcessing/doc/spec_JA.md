@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティMLProcessing  
-==================  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLProcessing/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述。**機械学習モデルの実行に関する要素をまとめたデータモデル**。  
 バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `alternateName`: この項目の別称  - `connectionParameters`: システムとの接続を実行するためのパラメータ  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `dueDate`: 処理実行予定データ/時間（後のバージョンでは計画的な処理を可能にするため）  - `id`: エンティティの一意な識別子  - `name`: このアイテムの名称です。  - `objective`: 加工の目的  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refMLModel`: 処理に使用する機械学習モデルをターゲットとする関係  - `refSubscriptionQuery`: 機械学習モデルで使用するサブスクリプションクエリをターゲットとするリレーションシップ。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。MLProcessingでなければならない    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `alternateName[string]`: この項目の別称  - `connectionParameters[object]`: システムとの接続を実行するためのパラメータ  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `dueDate[string]`: 処理実行予定データ/時間（後のバージョンでは計画的な処理を可能にするため）  - `id[*]`: エンティティの一意な識別子  - `name[string]`: このアイテムの名称です。  - `objective[string]`: 加工の目的  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refMLModel[*]`: 処理に使用する機械学習モデルをターゲットとする関係  - `refSubscriptionQuery[*]`: 機械学習モデルで使用するサブスクリプションクエリをターゲットとするリレーションシップ。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。MLProcessingでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 MLProcessing:    
@@ -153,9 +167,14 @@ MLProcessing:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### MLProcessing NGSI-v2 key-values の例．  
 ここでは，MLP処理をJSON-LD形式でkey-valuesとして表現した例を示します。これは，`options=keyValues` を利用した場合に NGSI-v2 と互換性があり，個々のエンティティのコンテキストデータが返されます．  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id":"urn:ngsi-ld:MLProcessing:01",  
@@ -164,8 +183,10 @@ MLProcessing:
   "refSubscriptionQuery": "urn:ngsi-ld:SubscriptionQuery:01"  
 }  
 ```  
+</details>  
 #### MLProcessing NGSI-v2 正規化例  
 以下は，MLProcessing を JSON-LD 形式で正規化した例です。これは，オプションを使用しない場合，NGSI-v2と互換性があり，個々のエンティティのコンテキストデータを返します．  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MLProcessing:01",  
@@ -180,8 +201,10 @@ MLProcessing:
   }  
 }  
 ```  
+</details>  
 #### MLProcessing NGSI-LD key-value 例  
 ここでは，MLP処理をJSON-LD形式でkey-valuesとして表現した例を示します．これは， `options=keyValues` を利用した場合にNGSI-LDと互換性があり，個々のエンティティのコンテキストデータを返します．  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:MLProcessing:01",  
@@ -193,8 +216,10 @@ MLProcessing:
     ]  
 }  
 ```  
+</details>  
 #### MLProcessing NGSI-LD 正規化例  
 ここでは，MLProcessing を JSON-LD 形式で正規化した例を示します。これは，オプションを使用しない場合のNGSI-LDと互換性があり，個々のエンティティのコンテキストデータを返します．  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:MLProcessing:01",  
@@ -207,7 +232,17 @@ MLProcessing:
         "type": "string",  
         "value": "urn:ngsi-ld:SubscriptionQuery:01"  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
