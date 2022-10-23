@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: MLModel  
-================  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/MLModel/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Modelo de datos para la compilación de los elementos de un modelo de aprendizaje automático.**  
 versión: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `acceptableDataSources`: Tipo válido de fuentes de datos de entrada para ejecutar el modelo de aprendizaje automático  - `algorithm`: El algoritmo utilizado por el modelo de aprendizaje automático subyacente (por ejemplo, regresión lineal, k-means, SVM, MLP,...)  - `alternateName`: Un nombre alternativo para este artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dockerImage`: Imagen Docker que contiene el modelo de aprendizaje automático  - `id`: Identificador único de la entidad  - `inputAttributes`: Lista separada por comas de nombres de atributos (que deben tener un tipo determinado por definición).  - `mlFramework`: El marco de aprendizaje automático que se ha utilizado para preparar el modelo (por ejemplo, scikit-learn, H2O, Spark MLib, etc.)  - `name`: El nombre de este artículo.  - `outputAttributes`: Lista separada por comas de los nombres de los atributos utilizados para publicar los resultados.  - `outputDataTypes`: Tipo de datos de salida producidos por el modelo de aprendizaje automático  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refMLProcessing`:   - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser MLModel  - `typeOfAlgorithm`: Enumeración  - `version`: Versión del modelo.    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `acceptableDataSources[array]`: Tipo válido de fuentes de datos de entrada para ejecutar el modelo de aprendizaje automático  - `algorithm[string]`: El algoritmo utilizado por el modelo de aprendizaje automático subyacente (por ejemplo, regresión lineal, k-means, SVM, MLP,...)  - `alternateName[string]`: Un nombre alternativo para este artículo  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `dockerImage[string]`: Imagen Docker que contiene el modelo de aprendizaje automático  - `id[*]`: Identificador único de la entidad  - `inputAttributes[array]`: Lista separada por comas de nombres de atributos (que deben tener un tipo determinado por definición).  - `mlFramework[string]`: El marco de aprendizaje automático que se ha utilizado para preparar el modelo (por ejemplo, scikit-learn, H2O, Spark MLib, etc.)  - `name[string]`: El nombre de este artículo.  - `outputAttributes[array]`: Lista separada por comas de los nombres de los atributos utilizados para publicar los resultados.  - `outputDataTypes[array]`: Tipo de datos de salida producidos por el modelo de aprendizaje automático  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refMLProcessing[array]`:   - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser MLModel  - `typeOfAlgorithm[string]`: Enumeración  . Model: [https://schema.org/Text](https://schema.org/Text)- `version[string]`: Versión del modelo.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 MLModel:    
@@ -168,9 +182,14 @@ MLModel:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### MLModel NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un MLModel en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "MLModel.01",  
@@ -191,8 +210,10 @@ MLModel:
   ]  
 }  
 ```  
+</details>  
 #### MLModel NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un MLModel en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "MLModel.01",  
@@ -234,8 +255,10 @@ MLModel:
   }  
 }  
 ```  
+</details>  
 #### MLModel NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un MLModel en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:MLModel:01",  
@@ -259,8 +282,10 @@ MLModel:
     ]  
 }  
 ```  
+</details>  
 #### MLModel NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un MLModel en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:MLModel:01",  
@@ -300,7 +325,17 @@ MLModel:
         "type": "Property",  
         "value": "12"  
     },  
-    "@context": []  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
