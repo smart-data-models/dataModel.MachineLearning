@@ -1,0 +1,3 @@
+/* (Beta) Export of data model MLModel of the subject dataModel.MachineLearning for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE MLModel_type AS ENUM ('MLModel');
+CREATE TABLE MLModel (acceptableDataSources json, algorithm text, alternateName text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, dockerImage text, id text, inputAttributes json, mlFramework text, name text, outputAttributes json, outputDataTypes json, owner json, refMLProcessing json, seeAlso json, source text, type MLModel_type, typeOfAlgorithm text, version text);
