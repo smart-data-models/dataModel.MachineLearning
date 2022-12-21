@@ -1,0 +1,3 @@
+/* (Beta) Export of data model SubscriptionQuery of the subject dataModel.MachineLearning for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE SubscriptionQuery_type AS ENUM ('SubscriptionQuery');
+CREATE TABLE SubscriptionQuery (alternateName text, csf text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, entities json, expiresAt text, geoQ text, id text, name text, notification json, owner json, q text, seeAlso json, source text, subscriptionName text, temporalQ text, throttling text, type SubscriptionQuery_type, watchedAttributes json);
