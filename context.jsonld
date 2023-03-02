@@ -1,5 +1,8 @@
 {
     "@context": {
+        "MLModel": "https://smartdatamodels.org/dataModel.MachineLearning/MLModel",
+        "MLProcessing": "https://smartdatamodels.org/dataModel.MachineLearning/MLProcessing",
+        "SubscriptionQuery": "https://smartdatamodels.org/dataModel.MachineLearning/SubscriptionQuery",
         "acceptableDataSources": "https://smartdatamodels.org/dataModel.MachineLearning/acceptableDataSources",
         "algorithm": "https://smartdatamodels.org/dataModel.MachineLearning/algorithm",
         "alternateName": "https://smartdatamodels.org/alternateName",
