@@ -1,70 +1,72 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。订阅查询  
-=======<!-- /10-Header -->  
+实体订阅查询  
+======<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全局描述。**机器学习模型的订阅查询模型**。  
-版本：0.0.1  
+全局描述：机器学习模型的**订阅查询模型**  
+版本： 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-##属性列表  
+## 属性列表  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `alternateName[string]`: 这个项目的一个替代名称  - `csf[string]`: 上下文源过滤器，应与描述用于检索实体的上下文源的上下文源注册相匹配。在 NGSI-LD 标准中定义。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `entities[array]`: 实体ID、ID模式和实体类型，实体应与之匹配，以便被检索。在NGSI-LD标准中定义。  - `expiresAt[string]`: 订阅的到期日。在NGSI-LD标准中定义。  - `geoQ[string]`: 应由实体匹配的地理查询，以便进行检索。在NGSI-LD标准中定义。  - `id[*]`: 实体的唯一标识符  - `name[string]`: 这个项目的名称。  - `notification[object]`: 订阅通知的参数。在NGSI-LD标准中定义。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `q[string]`: 应由实体匹配的查询，以便被检索。在NGSI-LD标准中定义。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `subscriptionName[string]`: 给予该订阅号的一个（简短）名称。在NGSI-LD标准中定义。  - `temporalQ[string]`: 时间查询只存在于 "查询实体的时间演变 "操作中。在NGSI-LD标准中定义。  - `throttling[string]`: 两个连续通知之间应间隔的最小时间（秒）。在NGSI-LD标准中定义。  - `type[string]`: 它必须是SubscriptionQuery。Enum:'SubscriptionQuery'。  - `watchedAttributes[array]`: 应由实体匹配的属性列表，以便被检索。如果不存在，所有的属性都会被检索到。在NGSI-LD标准中定义。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `alternateName[string]`: 该项目的替代名称  - `csf[string]`: 上下文源过滤器，描述用于检索实体的上下文源的上下文源注册应与之匹配。在 NGSI-LD 标准中定义  - `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `entities[array]`: 实体 id、id 模式和实体类型，实体必须与之匹配才能被检索。在 NGSI-LD 标准中定义  - `expiresAt[string]`: 订阅的到期日期。在 NGSI-LD 标准中定义  - `geoQ[string]`: 实体必须匹配才能检索的地理查询。在 NGSI-LD 标准中定义  - `id[*]`: 实体的唯一标识符  - `name[string]`: 该项目的名称  - `notification[object]`: 订阅通知的参数。在 NGSI-LD 标准中定义  	- `attributes`:     
+	- `endPoint`:     
+- `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `q[string]`: 实体必须匹配才能检索的查询。在 NGSI-LD 标准中定义  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `subscriptionName[string]`: 该订阅的（简短）名称。在 NGSI-LD 标准中定义  - `temporalQ[string]`: 时间查询仅适用于 "查询实体的时间演变 "操作。在 NGSI-LD 标准中定义  - `throttling[string]`: 两个连续通知之间的最短间隔时间（秒）。在 NGSI-LD 标准中定义  - `type[string]`: 必须是 SubscriptionQuery。NGSI 实体类型。枚举:'订阅查询  - `watchedAttributes[array]`: 必须与实体匹配才能检索到的属性列表。如果不存在，将检索所有属性。在 NGSI-LD 标准中定义。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SubscriptionQuery:    
-  description: 'Subscription Query model for Machine Learning models'    
+  description: Subscription Query model for Machine Learning models    
   properties:    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     csf:    
-      description: 'Context source filter that shall be matched by Context Source Registrations describing Context Sources to be used for retrieving Entities. Defined in NGSI-LD standard.'    
+      description: Context source filter that shall be matched by Context Source Registrations describing Context Sources to be used for retrieving Entities. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     entities:    
-      description: 'Entity ids, id pattern and Entity types that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard.'    
+      description: 'Entity ids, id pattern and Entity types that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard'    
       items:    
         properties:    
           type:    
@@ -74,35 +76,39 @@ SubscriptionQuery:
       x-ngsi:    
         type: Property    
     expiresAt:    
-      description: 'Expiration date for the subscription. Defined in NGSI-LD standard.'    
+      description: Expiration date for the subscription. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     geoQ:    
-      description: 'Geo-Query that shall be matched by Entities in order be retrieved. Defined in NGSI-LD standard.'    
+      description: Geo-Query that shall be matched by Entities in order be retrieved. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &subscriptionquery_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     notification:    
-      description: 'Parameters of the notification for the subscription. Defined in NGSI-LD standard.'    
+      description: Parameters of the notification for the subscription. Defined in NGSI-LD standard    
       properties:    
         attributes:    
           items:    
@@ -117,26 +123,42 @@ SubscriptionQuery:
               type: string    
           type: object    
         format:    
-          description: 'Property. Format of the output'    
+          description: Format of the output    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *subscriptionquery_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     q:    
-      description: 'Query that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard.'    
+      description: Query that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -148,27 +170,27 @@ SubscriptionQuery:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     subscriptionName:    
-      description: 'A (short) name given to this Subscription. Defined in NGSI-LD standard.'    
+      description: A (short) name given to this Subscription. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     temporalQ:    
-      description: 'Temporal Query to be present only for ''Query Temporal Evolution of Entities'' operation. Defined in NGSI-LD standard.'    
+      description: Temporal Query to be present only for 'Query Temporal Evolution of Entities' operation. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     throttling:    
-      description: 'Minimal period of time in seconds which shall elapse between two consecutive notifications. Defined in NGSI-LD standard.'    
+      description: Minimal period of time in seconds which shall elapse between two consecutive notifications. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'It has to be SubscriptionQuery. Enum:''SubscriptionQuery'''    
+      description: 'It has to be SubscriptionQuery. NGSI entity type. Enum:''SubscriptionQuery'''    
       enum:    
         - SubscriptionQuery    
       type: string    
@@ -186,20 +208,20 @@ SubscriptionQuery:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.MLModel/SubscriptionQuery/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
+## 有效载荷示例  
 #### SubscriptionQuery NGSI-v2 key-values 示例  
-这里是一个以JSON-LD格式作为key-values的SubscriptionQuery的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+下面是一个以 JSON-LD 格式作为键值的 SubscriptionQuery 示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -229,8 +251,8 @@ SubscriptionQuery:
 }  
 ```  
 </details>  
-#### SubscriptionQuery NGSI-v2规范化示例  
-这里是一个以JSON-LD格式规范化的SubscriptionQuery的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+#### SubscriptionQuery NGSI-v2 标准化示例  
+下面是一个规范化 JSON-LD 格式的 SubscriptionQuery 示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -272,8 +294,8 @@ SubscriptionQuery:
 }  
 ```  
 </details>  
-#### SubscriptionQuery NGSI-LD关键值示例  
-这里是一个以JSON-LD格式作为key-values的SubscriptionQuery的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### SubscriptionQuery NGSI-LD key-values 示例  
+下面是一个以 JSON-LD 格式作为键值的 SubscriptionQuery 示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -306,8 +328,8 @@ SubscriptionQuery:
 }  
 ```  
 </details>  
-#### SubscriptionQuery NGSI-LD规范化示例  
-这里是一个以JSON-LD格式规范化的SubscriptionQuery的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### SubscriptionQuery NGSI-LD 标准化示例  
+下面是一个规范化 JSON-LD 格式的 SubscriptionQuery 示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -355,7 +377,7 @@ SubscriptionQuery:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
