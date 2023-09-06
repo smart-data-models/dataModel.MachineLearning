@@ -8,14 +8,16 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Global description: **Subscription Query model for Machine Learning models**  
-version: 0.0.1  
+version: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `alternateName[string]`: An alternative name for this item  - `csf[string]`: Context source filter that shall be matched by Context Source Registrations describing Context Sources to be used for retrieving Entities. Defined in NGSI-LD standard.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `entities[array]`: Entity ids, id pattern and Entity types that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard.  - `expiresAt[string]`: Expiration date for the subscription. Defined in NGSI-LD standard.  - `geoQ[string]`: Geo-Query that shall be matched by Entities in order be retrieved. Defined in NGSI-LD standard.  - `id[*]`: Unique identifier of the entity  - `name[string]`: The name of this item.  - `notification[object]`: Parameters of the notification for the subscription. Defined in NGSI-LD standard.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `q[string]`: Query that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `subscriptionName[string]`: A (short) name given to this Subscription. Defined in NGSI-LD standard.  - `temporalQ[string]`: Temporal Query to be present only for 'Query Temporal Evolution of Entities' operation. Defined in NGSI-LD standard.  - `throttling[string]`: Minimal period of time in seconds which shall elapse between two consecutive notifications. Defined in NGSI-LD standard.  - `type[string]`: It has to be SubscriptionQuery. Enum:'SubscriptionQuery'  - `watchedAttributes[array]`: List of Attributes that shall be matched by Entities in order to be retrieved. If not present all Attributes will be retrieved. Defined in NGSI-LD standard.   <!-- /30-PropertiesList -->  
+- `alternateName[string]`: An alternative name for this item  - `csf[string]`: Context source filter that shall be matched by Context Source Registrations describing Context Sources to be used for retrieving Entities. Defined in NGSI-LD standard  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `entities[array]`: Entity ids, id pattern and Entity types that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard  - `expiresAt[string]`: Expiration date for the subscription. Defined in NGSI-LD standard  - `geoQ[string]`: Geo-Query that shall be matched by Entities in order be retrieved. Defined in NGSI-LD standard  - `id[*]`: Unique identifier of the entity  - `name[string]`: The name of this item  - `notification[object]`: Parameters of the notification for the subscription. Defined in NGSI-LD standard  	- `attributes`:     
+	- `endPoint`:     
+- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `q[string]`: Query that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `subscriptionName[string]`: A (short) name given to this Subscription. Defined in NGSI-LD standard  - `temporalQ[string]`: Temporal Query to be present only for 'Query Temporal Evolution of Entities' operation. Defined in NGSI-LD standard  - `throttling[string]`: Minimal period of time in seconds which shall elapse between two consecutive notifications. Defined in NGSI-LD standard  - `type[string]`: It has to be SubscriptionQuery. NGSI entity type. Enum:'SubscriptionQuery'  - `watchedAttributes[array]`: List of Attributes that shall be matched by Entities in order to be retrieved. If not present all Attributes will be retrieved. Defined in NGSI-LD standard.   <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -29,42 +31,42 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SubscriptionQuery:    
-  description: 'Subscription Query model for Machine Learning models'    
+  description: Subscription Query model for Machine Learning models    
   properties:    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     csf:    
-      description: 'Context source filter that shall be matched by Context Source Registrations describing Context Sources to be used for retrieving Entities. Defined in NGSI-LD standard.'    
+      description: Context source filter that shall be matched by Context Source Registrations describing Context Sources to be used for retrieving Entities. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     entities:    
-      description: 'Entity ids, id pattern and Entity types that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard.'    
+      description: 'Entity ids, id pattern and Entity types that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard'    
       items:    
         properties:    
           type:    
@@ -74,35 +76,39 @@ SubscriptionQuery:
       x-ngsi:    
         type: Property    
     expiresAt:    
-      description: 'Expiration date for the subscription. Defined in NGSI-LD standard.'    
+      description: Expiration date for the subscription. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     geoQ:    
-      description: 'Geo-Query that shall be matched by Entities in order be retrieved. Defined in NGSI-LD standard.'    
+      description: Geo-Query that shall be matched by Entities in order be retrieved. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &subscriptionquery_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     notification:    
-      description: 'Parameters of the notification for the subscription. Defined in NGSI-LD standard.'    
+      description: Parameters of the notification for the subscription. Defined in NGSI-LD standard    
       properties:    
         attributes:    
           items:    
@@ -117,26 +123,42 @@ SubscriptionQuery:
               type: string    
           type: object    
         format:    
-          description: 'Property. Format of the output'    
+          description: Format of the output    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *subscriptionquery_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     q:    
-      description: 'Query that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard.'    
+      description: Query that shall be matched by Entities in order to be retrieved. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -148,27 +170,27 @@ SubscriptionQuery:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     subscriptionName:    
-      description: 'A (short) name given to this Subscription. Defined in NGSI-LD standard.'    
+      description: A (short) name given to this Subscription. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     temporalQ:    
-      description: 'Temporal Query to be present only for ''Query Temporal Evolution of Entities'' operation. Defined in NGSI-LD standard.'    
+      description: Temporal Query to be present only for 'Query Temporal Evolution of Entities' operation. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     throttling:    
-      description: 'Minimal period of time in seconds which shall elapse between two consecutive notifications. Defined in NGSI-LD standard.'    
+      description: Minimal period of time in seconds which shall elapse between two consecutive notifications. Defined in NGSI-LD standard    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'It has to be SubscriptionQuery. Enum:''SubscriptionQuery'''    
+      description: 'It has to be SubscriptionQuery. NGSI entity type. Enum:''SubscriptionQuery'''    
       enum:    
         - SubscriptionQuery    
       type: string    
@@ -186,11 +208,11 @@ SubscriptionQuery:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.MachineLearning/blob/master/SubscriptionQuery/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.MLModel/SubscriptionQuery/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
