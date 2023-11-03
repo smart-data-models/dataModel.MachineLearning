@@ -1,0 +1,2 @@
+"id_", "type_", "entities__0__type_", "watchedAttributes__0_", "watchedAttributes__1_", "q_", "notification__attributes__0_", "notification__attributes__1_", "notification__format_", "notification__endpoint__uri_", "notification__endpoint__accept_"
+"urn:ngsi-ld:Subscription:01", "SubscriptionQuery", "WaterConsumption", "consumptionNextDay", "consumptionNextWeek", "refCity==urn:ngsi-ld:City:Valbonne", "consumptionNextDay", "consumptionNextWeek", "keyValues", "http://my-domain-name", "application/json"
