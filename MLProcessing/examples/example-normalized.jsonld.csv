@@ -1,2 +1,2 @@
-"id_", "type_", "refMLModel__type_", "refMLModel__value_", "refSubscriptionQuery__type_", "refSubscriptionQuery__value_"
-"urn:ngsi-ld:MLProcessing:01", "MLProcessing", "string", "urn:ngsi-ld:MLModel:01", "string", "urn:ngsi-ld:SubscriptionQuery:01"
+"id_", "type_", "refMLModel__type_", "refMLModel__value_", "refSubscriptionQuery__type_", "refSubscriptionQuery__value_", "@context__0_"
+"urn:ngsi-ld:MLProcessing:01", "MLProcessing", "string", "urn:ngsi-ld:MLModel:01", "string", "urn:ngsi-ld:SubscriptionQuery:01", "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"
