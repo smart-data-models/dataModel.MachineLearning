@@ -1,28 +1,28 @@
 {
-    "id": "urn:ngsi-ld:Subscription:01",
-    "type": "SubscriptionQuery",
-    "entities": [
-        {
-            "type": "WaterConsumption"
-        }
+  "id": "urn:ngsi-ld:Subscription:01",
+  "type": "SubscriptionQuery",
+  "entities": [
+    {
+      "type": "WaterConsumption"
+    }
+  ],
+  "notification": {
+    "attributes": [
+      "consumptionNextDay",
+      "consumptionNextWeek"
     ],
-    "notification": {
-        "attributes": [
-            "consumptionNextDay",
-            "consumptionNextWeek"
-        ],
-        "format": "keyValues",
-        "endpoint": {
-            "uri": "http://my-domain-name",
-            "accept": "application/json"
-        }
-    },
-    "q": "refCity==urn:ngsi-ld:City:Valbonne",
-    "watchedAttributes": [
-        "consumptionNextDay",
-        "consumptionNextWeek"
-    ],
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"
-    ]
+    "format": "keyValues",
+    "endpoint": {
+      "uri": "http://my-domain-name",
+      "accept": "application/json"
+    }
+  },
+  "q": "refCity==urn:ngsi-ld:City:Valbonne",
+  "watchedAttributes": [
+    "consumptionNextDay",
+    "consumptionNextWeek"
+  ],
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"
+  ]
 }
