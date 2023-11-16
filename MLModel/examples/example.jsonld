@@ -1,21 +1,21 @@
 {
-    "id": "urn:ngsi-ld:MLModel:01",
-    "type": "MLModel",
-    "algorithm": "k-means",
-    "description": "Predicts water consumption based on \u2026",
-    "dockerImage": "Docker image containing the model",
-    "inputAttributes": [
-        "minFlow",
-        "maxFlow",
-        "waterConsumption"
-    ],
-    "name": "Water consumption prediction",
-    "outputAttributes": [
-        "consumptionNextDay",
-        "consumptionNextWeek"
-    ],
-    "version": 12,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:MLModel:01",
+  "type": "MLModel",
+  "algorithm": "k-means",
+  "description": "Predicts water consumption based on \u2026",
+  "dockerImage": "Docker image containing the model",
+  "inputAttributes": [
+    "minFlow",
+    "maxFlow",
+    "waterConsumption"
+  ],
+  "name": "Water consumption prediction",
+  "outputAttributes": [
+    "consumptionNextDay",
+    "consumptionNextWeek"
+  ],
+  "version": "12",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MachineLearning/master/context.jsonld"
+  ]
 }
