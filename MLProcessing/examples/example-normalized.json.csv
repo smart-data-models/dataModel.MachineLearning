@@ -1,2 +1,2 @@
 "id_", "type_", "refMLModel__type_", "refMLModel__value_", "refSubscriptionQuery__type_", "refSubscriptionQuery__value_"
-"urn:ngsi-ld:MLProcessing:01", "MLProcessing", "object", "urn:ngsi-ld:MLModel:01", "object", "urn:ngsi-ld:SubscriptionQuery:01"
+"urn:ngsi-ld:MLProcessing:01", "MLProcessing", "Text", "urn:ngsi-ld:MLModel:01", "Text", "urn:ngsi-ld:SubscriptionQuery:01"
