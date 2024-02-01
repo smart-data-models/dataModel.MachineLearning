@@ -10,7 +10,7 @@
         ]
     },
     "notification": {
-        "type": "property",
+        "type": "Property",
         "value": {
             "attributes": [
                 "consumptionNextDay",
