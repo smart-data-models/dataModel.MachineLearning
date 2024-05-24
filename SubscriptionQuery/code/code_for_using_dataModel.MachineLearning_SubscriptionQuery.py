@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "SubscriptionQuery"
 subject = "dataModel.MachineLearning"
-entities = {'type': 'Property', 'value': [{'type': 'WaterConsumption'}]}
+entities = [{'type': 'WaterConsumption'}]
 attribute = "entities"
 value = entities
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-notification = {'type': 'Property', 'value': {'attributes': ['consumptionNextDay', 'consumptionNextWeek'], 'format': 'keyValues', 'endpoint': {'uri': 'http://my-domain-name', 'accept': 'application/json'}}}
+notification = {'attributes': ['consumptionNextDay', 'consumptionNextWeek'], 'format': 'keyValues', 'endpoint': {'uri': 'http://my-domain-name', 'accept': 'application/json'}}
 attribute = "notification"
 value = notification
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-q = "{'type': 'Property', 'value': 'refCity==urn:ngsi-ld:City:Valbonne'}"
+q = "refCity==urn:ngsi-ld:City:Valbonne"
 attribute = "q"
 value = q
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-watchedAttributes = {'type': 'Property', 'value': ['consumptionNextDay', 'consumptionNextWeek']}
+watchedAttributes = ['consumptionNextDay', 'consumptionNextWeek']
 attribute = "watchedAttributes"
 value = watchedAttributes
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
